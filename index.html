@@ -42,8 +42,11 @@
                             
                         </div>
                         <div class="middle-right mt-sm-3 col-sm-6 text-right">
-                            <h6><span class="fa fa-phone"></span> Enquiry : 94485 01261</h6>
-                        </div>
+                            <h6>
+                                <span class="fa fa-phone"></span> Enquiry : 
+                                <a href="tel:9448501261">94485 01261</a>
+                            </h6>
+                        </div>                        
                     </div>
                     <!-- nav -->
                     <nav class="pt-4 d-lg-flex">
@@ -454,21 +457,34 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 contact-grid-wthree foot-top mt-md-0 mt-5">
-                    <h3 class="contact-title mb-sm-4 mb-2">Address information</h3>
+                    <h3 class="contact-title mb-sm-4 mb-2">Address Information</h3>
                     <div class="contact-info">
                         <p class="mb-4">For more information, please phone or visit the School.</p>
                         <div class="contact-style-world">
-                            <p><span class="fa fa-map-marker"></span><strong>Location :</strong> GHPS Dupadakatte, Bairampalli </p>
+                            <p>
+                                <span class="fa fa-map-marker"></span> 
+                                <strong>Location :</strong> 
+                                <a href="https://maps.app.goo.gl/3eYMFPzCqNjep2Db9" target="_blank">
+                                    GHPS Dupadakatte, Bairampalli
+                                </a>
+                            </p>
                         </div>
                         <div class="contact-style-world my-2">
-                            <p><span class="fa fa-envelope-open"></span><strong>Email :</strong> 
-                                ghpsdoopadatte@gmail.com</p>
+                            <p>
+                                <span class="fa fa-envelope-open"></span> 
+                                <strong>Email :</strong> 
+                                <a href="mailto:ghpsdoopadatte@gmail.com">ghpsdoopadatte@gmail.com</a>
+                            </p>
                         </div>
                         <div class="contact-style-world">
-                            <p><span class="fa fa-phone"></span><strong>Phone :</strong> 94485 01261</p>
+                            <p>
+                                <span class="fa fa-phone"></span> 
+                                <strong>Phone :</strong> 
+                                <a href="tel:9448501261">94485 01261</a>
+                            </p>
                         </div>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
     </section>
@@ -507,19 +523,16 @@
                     </div>
                 </div>
             </div>
-            
-
             <p class="copy-right-grids text-li text-center my-sm-4 my-4">
-                Thankyou for visiting our school website
-            </p>
-            
+                &copy; <span id="year"></span> Thank you for visiting our school website. All rights reserved.
+            </p>     
         </div>
         <!-- //footer bottom -->
         </div>
     </footer>
-    <!-- //footer -->
-
-
+    <!-- //footer -->   
 </body>
-
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </html>
